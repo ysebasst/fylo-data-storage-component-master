@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- TITLE -->
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="hero">
+            <img class="hero__logo" src="images/logo.svg" alt="logo fylo" />
+            <div class="hero__icons">
+              <img
+                class="hero__icon"
+                src="images/icon-document.svg"
+                alt="icon document"
+              />
+              <img
+                class="hero__icon"
+                src="images/icon-folder.svg"
+                alt="icon folder"
+              />
+              <img
+                class="hero__icon"
+                src="images/icon-upload.svg"
+                alt="icon upload"
+              />
+            </div>
+          </section>
+          <section class="storage">
+            <h3 class="storage__title">
+              You’ve used <span id="GB">815</span> of your storage
+            </h3>
+            <input
+              class="storage__slider"
+              type="range"
+              min="0"
+              max="1000"
+              value="815"
+            />
+            <p class="storage__quantity">
+              <span>0 GB</span>
+              <span>1000 GB</span>
+            </p>
+            <p class="storage__GBleft">
+              <span id="GB-left">185</span>
+              <span>GB Left</span>
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      <span>Challenge by </span>
+      <a
+        href="https://www.frontendmentor.io/challenges/fylo-data-storage-component-1dZPRbV5n"
+        target="_blank"
+      >
+        Frontend Mentor
+      </a>
+      <span>. Coded by </span>
+      <a href="#">Sebastian Sierra</a>.
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
